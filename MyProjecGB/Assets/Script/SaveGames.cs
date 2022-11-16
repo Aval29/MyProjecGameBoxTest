@@ -64,23 +64,17 @@ public class SaveGames : MonoBehaviour
         
     }
 
-    void OnApplicationPause(bool pause)
+    void OnApplicationPause()
     {
-        if (_pause)
-        {
-                if (pause)
-            {
+
                 Debug.Log("Пауза");
-                if (saveLoad == false)
-                    Save();
-            }
-        }
+                saveGames();
+
     }
 
     private void OnApplicationQuit()
     {
-        if (saveLoad == false)
-            Save();
+        saveGames();
     }
 
     public void SaveDel()
@@ -97,7 +91,13 @@ public class SaveGames : MonoBehaviour
     [SerializeField]
     private GameObject forestPares;
 
-
+    private void saveGames()
+    {
+        if (saveLoad == false)
+            Save();
+        else
+            saveGames();
+    }
 
     public void Save()
     {

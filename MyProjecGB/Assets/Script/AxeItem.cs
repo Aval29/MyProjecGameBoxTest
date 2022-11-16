@@ -14,6 +14,7 @@ public class AxeItem : MonoBehaviour , IDragHandler, IBeginDragHandler, IEndDrag
     /// холст на котором находится объект
     /// </summary>
     private Canvas _mainCanvas;
+    
     private CanvasGroup _canvasGroup;
 
     [SerializeField]
@@ -34,7 +35,6 @@ public class AxeItem : MonoBehaviour , IDragHandler, IBeginDragHandler, IEndDrag
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        // throw new System.NotImplementedException();
         var slotTransform = _rectTransform.parent; // Transform родителя
         slotTransform.SetAsLastSibling(); // в конец списка родителя
         _canvasGroup = GetComponent<CanvasGroup>();
@@ -50,8 +50,7 @@ public class AxeItem : MonoBehaviour , IDragHandler, IBeginDragHandler, IEndDrag
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        //  throw new System.NotImplementedException();
-        //if( )
+
         {
 
 
@@ -66,7 +65,6 @@ public class AxeItem : MonoBehaviour , IDragHandler, IBeginDragHandler, IEndDrag
 
 
 
-    // Update is called once per frame
-   // void Update()
+
     
 }

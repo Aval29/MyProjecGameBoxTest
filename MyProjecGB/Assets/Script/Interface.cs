@@ -133,4 +133,12 @@ public class Interface : MonoBehaviour
 
 }
 
+
+    public void onClikExit()
+    {
+
+        Application.Quit();    // закрыть приложение
+
+    }
+
 }

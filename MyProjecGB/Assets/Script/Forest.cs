@@ -9,7 +9,7 @@ public class Forest : MonoBehaviour
     private Vector3 positOn;
 
 
-    // Start is called before the first frame update
+
     void Awake()
     {
         transform.gameObject.SetActive(true);
