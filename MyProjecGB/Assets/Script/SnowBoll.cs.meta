@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 94d724b94ba25294c9bf6f10268b7fd7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - snowBall: {fileID: 6038884150428131743, guid: 3156eb63a71d73844b9d839228e995c3, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
